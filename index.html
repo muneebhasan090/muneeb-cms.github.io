@@ -2,116 +2,227 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Muneeb Hasan | CMS Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #f4f6f8;
-      color: #333;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
-    header {
-      background: #0f172a;
-      color: #fff;
-      padding: 40px 20px;
+
+    body {
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-    }
-    section {
+      background: linear-gradient(135deg, #0f172a, #020617);
       padding: 40px 20px;
-      max-width: 1000px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: translateY(-2px);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
       margin: auto;
     }
-    h2 {
-      color: #0f172a;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 10px;
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #fff;
     }
-    .skills span {
-      display: inline-block;
-      background: #e5e7eb;
-      padding: 8px 12px;
-      margin: 6px;
-      border-radius: 6px;
+
+    /* ABOUT */
+    .about {
+      text-align: center;
+      color: #cbd5f5;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skill {
+      padding: 10px 18px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
       font-size: 14px;
+      transition: 0.3s;
     }
+
+    .skill:hover {
+      background: #38bdf8;
+      color: #020617;
+    }
+
+    /* PROJECTS */
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
+
     .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 25px;
+      transition: 0.3s;
     }
-    footer {
-      background: #0f172a;
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
       color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      margin-bottom: 10px;
     }
-    a { color: #2563eb; text-decoration: none; }
+
+    .card p {
+      color: #cbd5f5;
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Muneeb Hasan</h1>
-  <p>CMS Developer | WordPress Specialist</p>
-</header>
-
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a CMS Developer with strong experience in WordPress development, theme customization, plugin integration, and performance optimization. I create clean, responsive, and SEO-friendly websites for businesses and individuals.
-  </p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>WordPress</span>
-    <span>CMS Development</span>
-    <span>Theme Customization</span>
-    <span>Plugin Integration</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>Basic JavaScript</span>
-    <span>SEO Optimization</span>
-  </div>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="card">
-      <h3>Business Website</h3>
-      <p>Developed a responsive WordPress website for a local business with custom theme and contact forms.</p>
-    </div>
-    <div class="card">
-      <h3>Inspection Report Website</h3>
-      <p>CMS-based vehicle inspection report website with online forms and admin dashboard.</p>
-    </div>
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Personal portfolio hosted on GitHub Pages to showcase CMS and web development skills.</p>
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Muneeb <span>Hasan</span></h1>
+      <p>CMS Developer • WordPress Specialist • Website Builder</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </div>
-</section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: yourname@email.com</p>
-  <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-</section>
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <p class="about">
+      I am a CMS Developer specializing in WordPress websites, custom themes, plugin integration, and performance optimization. I help businesses build fast, secure, and professional online presence.
+    </p>
+  </section>
 
-<footer>
-  <p>© 2026 Muneeb Hasan | CMS Developer</p>
-</footer>
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">WordPress</div>
+      <div class="skill">CMS Development</div>
+      <div class="skill">Theme Customization</div>
+      <div class="skill">Plugin Integration</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript (Basic)</div>
+      <div class="skill">SEO Optimization</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Business Website</h3>
+        <p>Professional WordPress website with custom design, contact forms, and SEO optimization.</p>
+      </div>
+      <div class="card">
+        <h3>Vehicle Inspection CMS</h3>
+        <p>CMS-based inspection report system with admin dashboard and online forms.</p>
+      </div>
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>Modern GitHub Pages portfolio to showcase CMS and web development skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <strong>yourname@email.com</strong></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    © 2026 Muneeb Hasan | CMS Developer
+  </footer>
 
 </body>
 </html>
